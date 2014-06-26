@@ -2,7 +2,7 @@ angular.module('pushzilla', ['ionic', '$push'])
     .config(['$pushProvider',
         function($pushProvider) {
             $pushProvider.setPushParams({
-                "senderID": "<< senderID >> "
+                "senderID": "<< senderID >> " // For android
             });
         }
     ])
