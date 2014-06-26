@@ -11,6 +11,26 @@
     <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
     <link href="css/ionic.app.css" rel="stylesheet">
     -->
+    
+  </head>
+  <body ng-app="pushzilla" animation="slide-left-right-ios7">
+    <!-- 
+      The nav bar that will be updated as we navigate between views.
+    -->
+     <ion-header-bar class="bar-positive">
+      <h1 class="title">Push Ionic!</h1>
+    </ion-header-bar>
+    <ion-content id="main" ng-controller="MainCtrl">
+      <pre>{{notification | json }}</pre>
+      <div class="success">
+        Success: {{success}}
+      </div>
+      <div ng-if="platform == 'android'">
+        Registration ID: <div> {{regid}}</div>
+      </div>
+      
+      
+    </ion-content>
 
     <!-- ionic/angularjs js -->
     <script src="lib/ionic/js/ionic.bundle.js"></script>
@@ -19,27 +39,10 @@
     <script src="cordova.js"></script>
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/PushNotification.js"></script>
+    <script type="text/javascript" src="js/angular-push.js"></script> 
+    <script src="http://jsconsole.com/remote.js?AC6CA8E5-A020-4AD0-8783-66D57BC83C7C"></script>
 
-    <!-- your app's js -->
+    
     <script src="js/app.js"></script>
-    <script src="js/controllers.js"></script>
-    <script src="js/services.js"></script>
-  </head>
-  <body ng-app="push-ionic" animation="slide-left-right-ios7">
-    <!-- 
-      The nav bar that will be updated as we navigate between views.
-    -->
-     <ion-header-bar class="bar-positive">
-      <h1 class="title">Push Ionic!</h1>
-    </ion-header-bar>
-    <ion-content>
-      <div id="home">
-            <div id="app-status-div">
-                <ul id="app-status-ul">
-                    <li>Push test</li>
-                </ul>
-            </div>
-        </div>
-    </ion-content>
   </body>
 </html>

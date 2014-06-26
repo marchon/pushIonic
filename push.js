@@ -13,11 +13,11 @@ var message = new gcm.Message({
     }
 });
 
-var sender = new gcm.Sender('<<sender-key>>');
+var sender = new gcm.Sender('<< sender-key >>');
 var registrationIds = [];
 
 
-registrationIds.push("regId");
+registrationIds.push("APA91bGGPylpmjHGY2fr-4ypJYh60fVq_HsCk2oafwDQbWv5XWL7FAgFc-HNVRx0GaugCuwE0-KkfoPXmTidEnRg-zrbFpRYJ3mcYYF7kfpEjSXu1IelgdO7Vu_oiqFkSSMmxaRIpx3rxPPHXALCWsvoU0M0ZGoauQ");
 
 
 
